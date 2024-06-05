@@ -1,0 +1,114 @@
+/********** Template CSS **********/
+.fw-bold {
+    font-weight: 700 !important;
+}
+
+.fw-medium {
+    font-weight: 600 !important;
+}
+
+.fw-semi-bold {
+    font-weight: 500 !important;
+}
+
+/* Navbar */
+
+
+nav {
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.navbar .navbar-nav .nav-link:hover{
+    color: green;
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: green;
+}
+
+.navbar .dropdown-menu .dropdown-item a:hover {
+    color: green;
+}
+/* Navbar */
+
+
+/*** Header ***/
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, .1);
+    z-index: 1;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 15%;
+}
+
+@media (max-width: 768px) {
+    #header-carousel .carousel-item {
+        position: relative;
+        min-height: 450px;
+    }
+    
+    #header-carousel .carousel-item img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/*** Header ***/
+
+/*** 3 Card  ***/
+.inner  {
+    overflow: hidden;
+}
+
+.inner img {
+    transition: all 1.5s ease;
+}
+
+.inner:hover img {
+    transform: scale(1.5);
+}
+
+/*** 3 Card ***/
+
+/*** Footer ***/
+footer p:nth-child(1){
+	font-size: 30px;
+	font-weight:bold;
+	color:#FFFFFF;
+	line-height:10px;
+}
+
+footer p:nth-child(2){
+	font-size: 16px;
+	color:#7e7d7d;
+}
+
+footer{
+	height:300px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	position: relative;
+	background-color: #191919;
+}
+
+.copyright{
+	color:#565555;
+	font-size: 15px;
+	position: absolute;
+	left:50%;
+	bottom:10px;
+	transform: translateX(-50%);
+}
